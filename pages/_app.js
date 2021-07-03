@@ -1,4 +1,3 @@
-import '../styles/globals.css';
 import PropTypes from 'prop-types';
 
 const App = ({ Component, pageProps }) => {
@@ -10,4 +9,4 @@ App.propTypes = {
   pageProps: PropTypes.object,
 };
 
-export default MyApp;
+export default App;
