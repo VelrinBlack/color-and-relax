@@ -14,6 +14,10 @@ const theme = {
     L: '48px',
     XL: '64px',
   },
+  fontWeight: {
+    bold: 700,
+    light: 400,
+  },
   borderRadius: '3px',
 };
 

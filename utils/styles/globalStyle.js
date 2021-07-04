@@ -7,6 +7,16 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         font-family: 'Montserrat', sans-serif;
     }
+
+    html, body, #__next {
+        height: 100%;
+
+        body {
+            background-color: ${({ theme }) => theme.color.darkGrey};
+        }
+    }
+    
+
 `;
 
 export default GlobalStyle;
