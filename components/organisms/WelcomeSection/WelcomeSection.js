@@ -4,8 +4,8 @@ import BrandContext from 'utils/BrandContext';
 import StyledWrapper from './WelcomeSection.styles';
 import Form from 'components/molecules/Form/Form';
 import { COLOR_AND_RELAX } from 'utils/strings';
-import colorAndRelaxLogo from 'assets/images/color-and-relax-logo.png';
-import sunshineArtLogo from 'assets/images/sunshine-art-logo.png';
+import colorAndRelaxLogo from 'assets/images/logos/color-and-relax.png';
+import sunshineArtLogo from 'assets/images/logos/sunshine-art.png';
 
 const WelcomeSection = () => {
   const brandData = useContext(BrandContext);

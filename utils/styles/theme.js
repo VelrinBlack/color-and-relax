@@ -5,7 +5,8 @@ const theme = {
     red: '#FF1616',
     darkGrey: '#2B2B2B',
     lightGrey: '#424242',
-    lightGreyShadow: 'rgba(66, 66, 66, 50%)',
+    lightGreyShadow1: 'rgba(66, 66, 66, 50%)',
+    lightGreyShadow2: 'rgba(66, 66, 66, 75%)',
   },
   fontSize: {
     XS: '14px',
