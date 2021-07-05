@@ -2,11 +2,27 @@ import styled from 'styled-components';
 import { COLOR_AND_RELAX } from 'utils/strings';
 
 const StyledWrapper = styled.section`
+  position: relative;
   min-height: 100%;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .line {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 5px;
+    width: 100%;
+
+    background-color: ${({ theme, brandColor }) => theme.color[brandColor]};
+
+    @media (max-width: 768px) {
+      height: 4px;
+    }
+  }
 
   .container {
     width: 800px;

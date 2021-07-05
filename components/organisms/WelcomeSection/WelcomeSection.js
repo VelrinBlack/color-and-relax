@@ -3,7 +3,7 @@ import Image from 'next/image';
 import BrandContext from 'utils/BrandContext';
 import StyledWrapper from './WelcomeSection.styles';
 import Form from 'components/molecules/Form/Form';
-import { COLOR_AND_RELAX } from 'utils/strings';
+import { COLOR_AND_RELAX, SUNSHINE_ART } from 'utils/strings';
 import colorAndRelaxLogo from 'assets/images/logos/color-and-relax.png';
 import sunshineArtLogo from 'assets/images/logos/sunshine-art.png';
 
@@ -15,6 +15,8 @@ const WelcomeSection = () => {
 
   return (
     <StyledWrapper brandName={brandData.name} brandColor={brandData.color}>
+      {brandData.name === SUNSHINE_ART && <div className="line"></div>}
+
       <div className="container">
         <Image src={logo} alt={brandData.name} />
 
