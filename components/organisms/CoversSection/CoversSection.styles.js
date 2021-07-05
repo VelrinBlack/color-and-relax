@@ -1,18 +1,6 @@
 import styled from 'styled-components';
 
 const StyledWrapper = styled.section`
-  .background-shadow {
-    height: 15px;
-
-    &.background-shadow-1 {
-      background-color: ${({ theme }) => theme.color.lightGreyShadow1};
-    }
-
-    &.background-shadow-2 {
-      background-color: ${({ theme }) => theme.color.lightGreyShadow2};
-    }
-  }
-
   .background {
     padding: 100px 0;
 

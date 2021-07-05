@@ -2,14 +2,14 @@ import { useContext } from 'react';
 import BrandContext from 'utils/BrandContext';
 import StyledWrapper from './CoversSection.styles';
 import CoverCard from 'components/molecules/CoverCard/CoverCard';
+import Shadow from 'components/atoms/Shadow/Shadow';
 
 const CoversSection = () => {
   const brandData = useContext(BrandContext);
 
   return (
     <StyledWrapper>
-      <div className="background-shadow background-shadow-1"></div>
-      <div className="background-shadow background-shadow-2"></div>
+      <Shadow />
 
       <div className="background">
         <div className="covers-container">
