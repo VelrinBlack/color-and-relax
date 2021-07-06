@@ -19,9 +19,7 @@ const CoversSection = () => {
           ))}
 
           <Link href={brandData.allBooksURL}>
-            <a target="blank" className="all-books-link">
-              All books
-            </a>
+            <a className="all-books-link">All books</a>
           </Link>
         </div>
       </div>
