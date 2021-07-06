@@ -25,42 +25,42 @@ const brandsData = {
           src: colorAndRelax1,
           alt: 'Mandala coloring book - animals',
         },
-        link: '-',
+        link: 'https://www.amazon.com/dp/B093R5TGNB',
       },
       {
         cover: {
           src: colorAndRelax2,
           alt: 'Mandala coloring book',
         },
-        link: '-',
+        link: 'https://www.amazon.com/dp/B093B6JB8R',
       },
       {
         cover: {
           src: colorAndRelax3,
           alt: 'Sea creatures - coloring book for kids',
         },
-        link: '-',
+        link: 'https://www.amazon.com/dp/B08QWH39R5',
       },
       {
         cover: {
           src: colorAndRelax4,
           alt: 'Geometric shapes and patterns coloring book',
         },
-        link: '-',
+        link: 'https://www.amazon.com/dp/B08Q6Y93HQ',
       },
       {
         cover: {
           src: colorAndRelax5,
           alt: 'Mandalas coloring book for adults',
         },
-        link: '-',
+        link: 'https://www.amazon.com/dp/B08R6MTBKW',
       },
       {
         cover: {
           src: colorAndRelax6,
           alt: 'Farting cats - coloring book',
         },
-        link: '-',
+        link: 'https://www.amazon.com/dp/B08W7JTWBY',
       },
     ],
     allBooksURL:
@@ -77,21 +77,21 @@ const brandsData = {
           src: sunshineArt1,
           alt: 'Calligraphy set for beginners',
         },
-        link: '-',
+        link: 'https://www.amazon.com/dp/B094T5Z2L4',
       },
       {
         cover: {
           src: sunshineArt2,
           alt: 'Kanji practice notebook',
         },
-        link: '-',
+        link: 'https://www.amazon.com/dp/B096LS2PDM',
       },
       {
         cover: {
           src: sunshineArt3,
           alt: 'Cursive handwriting workbook',
         },
-        link: '-',
+        link: 'https://www.amazon.com/dp/B0988NV3WY',
       },
       {
         cover: {
@@ -105,14 +105,14 @@ const brandsData = {
           src: sunshineArt5,
           alt: 'Sketch book',
         },
-        link: '-',
+        link: 'https://www.amazon.com/dp/B0959JGLDC',
       },
       {
         cover: {
           src: sunshineArt6,
           alt: 'Blank comic book',
         },
-        link: '-',
+        link: 'https://www.amazon.com/dp/B096XSW6YP',
       },
     ],
     allBooksURL:
