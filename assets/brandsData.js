@@ -63,6 +63,8 @@ const brandsData = {
         link: '-',
       },
     ],
+    allBooksURL:
+      'https://www.amazon.com/Anette-Cecille/e/B08L9SZ8J7/ref=dp_byline_cont_pop_book_1',
   },
   sunshineArt: {
     name: SUNSHINE_ART,
@@ -113,6 +115,8 @@ const brandsData = {
         link: '-',
       },
     ],
+    allBooksURL:
+      'https://www.amazon.com/Sunshine-Art/e/B095L1TMV4/ref=dp_byline_cont_pop_book_1',
   },
 };
 

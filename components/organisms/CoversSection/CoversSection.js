@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import Link from 'next/link';
 import BrandContext from 'utils/BrandContext';
 import StyledWrapper from './CoversSection.styles';
 import CoverCard from 'components/molecules/CoverCard/CoverCard';
@@ -8,14 +9,20 @@ const CoversSection = () => {
   const brandData = useContext(BrandContext);
 
   return (
-    <StyledWrapper>
+    <StyledWrapper brandColor={brandData.color}>
       <Shadow />
 
       <div className="background">
-        <div className="covers-container">
+        <div className="container">
           {brandData.books.map((book, id) => (
             <CoverCard cover={book.cover} link={book.link} key={id} />
           ))}
+
+          <Link href={brandData.allBooksURL}>
+            <a target="blank" className="all-books-link">
+              All books
+            </a>
+          </Link>
         </div>
       </div>
     </StyledWrapper>
