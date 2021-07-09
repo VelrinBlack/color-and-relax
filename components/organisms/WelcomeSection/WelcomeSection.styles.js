@@ -83,7 +83,7 @@ const StyledWrapper = styled.section`
       color: ${({ theme }) => theme.color.white};
 
       @media (max-width: 768px) {
-        margin-top: 30px;
+        margin-top: 20px;
         font-size: ${({ theme }) => theme.fontSize.XS};
       }
     }
