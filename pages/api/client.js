@@ -1,6 +1,10 @@
-import fs from 'fs';
-import path from 'path';
+import { MongoClient } from 'mongodb';
 import nodemailer from 'nodemailer';
+
+const mongoClient = new MongoClient(process.env.NEXT_PUBLIC_MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 const client = async (req, res) => {
   if (req.method === 'POST') {
@@ -12,11 +16,17 @@ const client = async (req, res) => {
       });
     }
 
-    const emailAddressesFilePath = path.resolve('utils', 'emailAddresses.txt');
+    if (!mongoClient.isConnected()) await mongoClient.connect();
 
-    if (!fs.readFileSync(emailAddressesFilePath, 'utf8').match(email)) {
-      fs.appendFileSync(emailAddressesFilePath, email + '\n');
+    const clientsCollection = mongoClient.db('main').collection('clients');
+
+    const client = await clientsCollection.findOne({ email });
+
+    if (!client) {
+      await clientsCollection.insertOne({ email });
     }
+
+    const clients = await clientsCollection.find().toArray();
 
     const transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
@@ -37,14 +47,9 @@ const client = async (req, res) => {
       <br/>
       <b>Tytuł książki</b>: ${bookTitle}
       <br/><br/>
-      <i>W załączniku znajduje się lista adresów email wszystkich klientów</i>
+      <i>Adresy email wszystkich klientów:</i>
+      ${clients.map(({ email }) => `<br/>${email}`)}
       `,
-      attachments: [
-        {
-          filename: 'adresy.txt',
-          path: emailAddressesFilePath,
-        },
-      ],
     });
 
     res.status(200).json({ message: 'Success' });
