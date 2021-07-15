@@ -17,7 +17,7 @@ const brandsData = {
   colorAndRelax: {
     name: COLOR_AND_RELAX,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+      '"Color and Relax" and "Sunshine Art" are a private labels where we focus on creating practical books for children and adults. We put a lot of heart and teaching knowledge into creating books and make every effort to ensure that our products meet your expectations.',
     color: 'purple',
     books: [
       {
@@ -69,7 +69,7 @@ const brandsData = {
   sunshineArt: {
     name: SUNSHINE_ART,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+      'Discover our wide range of books, thanks to which children can learn and play both at home and while traveling. Our offer also includes books that will help adults relax and take their minds away from everyday life. We hope that you will find something for yourself or your loved ones.',
     color: 'red',
     books: [
       {
