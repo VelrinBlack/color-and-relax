@@ -52,6 +52,17 @@ const client = async (req, res) => {
       `,
     });
 
+    await transporter.sendMail({
+      from: '"Color and Relax / Sunshine Art" <emailsender4265@gmail.com>',
+      to: email,
+      subject: 'Thank you!',
+      html: `
+      Welcome, we are very pleased that you are with us. 
+      <br/>
+      You will soon receive a free file from us. Check what we have prepared for you.
+      `,
+    });
+
     res.status(200).json({ message: 'Success' });
   } else {
     res.writeHead(302, {
