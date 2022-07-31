@@ -6,8 +6,8 @@ const Footer = () => (
     <Shadow />
 
     <div className="container">
-      <p>© Michał Pocięgiel 2021</p>
-      <p>Created by Bart Wlecial</p>
+      <p>© Michał Pocięgiel 2021-2022</p>
+      <p>Created by Bartosz Wleciał</p>
     </div>
   </StyledWrapper>
 );
